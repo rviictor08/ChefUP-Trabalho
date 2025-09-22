@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #fff8f0;
@@ -6,24 +8,32 @@ body {
   color: #333;
 }
 
+/* Cabeçalho */
 header {
   background: #2a9d8f;
   color: white;
-  padding: 1em 2em;
+  padding: 1.5em 2em; /* um pouco maior que o original */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px; /* altura maior */
+  box-sizing: border-box;
 }
 
 header h1 {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: "Condiment", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px; /* maior para destacar */
 }
 
 nav a {
   color: white;
-  margin-left: 1em;
+  margin-left: 1.5em;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
@@ -31,19 +41,22 @@ nav a:hover {
   color: #fefae0;
 }
 
-/* Tabela estilo cardápio */
+/* Conteúdo principal */
 main {
   padding: 2em;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
+/* Título */
 h2 {
   color: #e63946;
   margin-bottom: 1em;
   text-align: center;
 }
 
+/* Tabela estilo catálogo */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -51,6 +64,7 @@ table {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 16px;
 }
 
 th, td {
@@ -63,9 +77,41 @@ th {
   background: #e63946;
   color: white;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 tr:hover {
   background: #fdf3f3;
+}
+
+/* Imagens do cardápio */
+img {
+  height: 180px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 0.6em;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  nav {
+    margin-top: 0.5em;
+  }
 }

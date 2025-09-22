@@ -1,4 +1,6 @@
-/* Fonte global */
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #fff8f0;
@@ -19,8 +21,10 @@ header {
 }
 
 header h1 {
-  font-family: "Merriweather", serif;
   margin: 0;
+  font-family: "Condiment", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav a {
