@@ -1,0 +1,49 @@
+/* Fonte global */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: #2a9d8f;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fefae0;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  color: #e63946;
+  margin-bottom: 1em;
+}
