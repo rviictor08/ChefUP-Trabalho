@@ -28,17 +28,16 @@ header h1 {
   font-size: 36px; /* maior para destacar */
 }
 
-nav a {
+.navegacao a {
   color: white;
-  margin-left: 1.5em;
+  margin-left: 1em;
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #fefae0;
+.navegacao a:hover {
+  color: black
 }
 
 /* Conteúdo principal */

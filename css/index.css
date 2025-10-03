@@ -20,14 +20,15 @@ header {
   align-items: center;
 }
 
-header h1 {
+.menu{
   margin: 0;
   font-family: "Condiment", cursive;
   font-weight: 400;
   font-style: normal;
+  color:white
 }
 
-nav a {
+.navegacao a {
   color: white;
   margin-left: 1em;
   text-decoration: none;
@@ -35,8 +36,8 @@ nav a {
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #fefae0;
+.navegacao a:hover {
+  color: black
 }
 
 /* Conteúdo principal */

@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
-  <header>
-    <h1>ChefUp</h1>
-    <nav>
+   <header>
+    <h1 class="menu">ChefUp</h1>
+    <nav class="navegacao">
       <a href="index.html">Home</a>
       <a href="catalog.html">Catálogo</a>
       <a href="contact.html">Contato</a>
@@ -21,16 +21,16 @@
 
     <!-- o onsubmit reseta o form e impede envio real -->
     <form onsubmit="this.reset(); return false;">
-      <label for="nome">Nome:</label>
+      <label id="nomeformulario" for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required />
 
-      <label for="email">E-mail:</label>
+      <label id="emailformulario" for="email">E-mail:</label>
       <input type="email" id="email" name="email" required />
 
-      <label for="assunto">Assunto:</label>
+      <label id="assuntoformulario" for="assunto">Assunto:</label>
       <input type="text" id="assunto" name="assunto" required />
 
-      <label for="mensagem">Mensagem:</label>
+      <label id="mensagemformulario" for="mensagem">Mensagem:</label>
       <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
       <button type="submit">Enviar</button>

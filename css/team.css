@@ -24,15 +24,16 @@ header h1 {
   font-style: normal;
 }
 
-nav a {
+.navegacao a {
   color: white;
   margin-left: 1em;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #fefae0;
+.navegacao a:hover {
+  color: black
 }
 
 main {
