@@ -1,47 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>ChefUp - Home</title>
-  <link rel="stylesheet" href="css/index.css" />
+<meta charset="utf-8">
+<title>Portal Gourmet - Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link id="theme-style" rel="stylesheet" href="css/styles.css">
+<script src="js/theme.js" defer></script>
+<script src="js/carrega_dados.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1 class="menu">ChefUp</h1>
-    <nav class="navegacao">
-      <a href="index.html">Home</a>
-      <a href="catalog.html">Catálogo</a>
-      <a href="contact.html">Contato</a>
-      <a href="team.html">Equipe</a>
-    </nav>
-  </header>
+<header class="topbar">
+  <div class="container bar">
+    <a class="logo" href="index.html"><span class="mark"></span>Portal Gourmet</a>
+    <div class="search"><input id="search" placeholder="procurar receita"></div>
+    <div class="top-actions">
+      <a href="tabela.html" class="ghost">ver receitas</a>
+      <a href="login.html" class="btn">entrar</a>
+    </div>
+  </div>
+</header>
 
-  <main>
-    <h2>Bem-vindo ao ChefUp</h2>
-    <p>
-      O <strong>ChefUp</strong> é um catálogo de receitas pensado como um projeto front-end acadêmico.
-      Aqui você encontra receitas com imagem, categoria, tempo de preparo e nível de dificuldade —
-      informações que permitem, no futuro, implementar operações CRUD sobre a entidade <em>Receita</em>.
-    </p>
+<main class="container">
+  <section class="hero">
+    <div class="carousel" id="carousel"></div>
+  </section>
 
-    <section>
-      <h3>Objetivo da aplicação</h3>
-      <ul>
-        <li>Exibir receitas em um catálogo (Read).</li>
-        <li>Permitir futuramente criar, editar e remover receitas (CRUD).</li>
-        <li>Ter página de contato e página com os integrantes da equipe (requisitos da entrega).</li>
-      </ul>
-    </section>
+  <div class="section-title">
+    <h3>receitas mais buscadas</h3>
+    <a href="tabela.html">ver todas</a>
+  </div>
 
-    <section>
-      <h3>Estrutura entregue</h3>
-      <ol>
-        <li><strong>index.html</strong> — Página inicial (tema e objetivo).</li>
-        <li><strong>catalog.html</strong> — Tabela com 5 colunas e 5 linhas de receitas.</li>
-        <li><strong>contact.html</strong> — Formulário de contato (nome, e-mail, assunto, mensagem).</li>
-        <li><strong>team.html</strong> — Lista com nome e matrícula dos integrantes.</li>
-      </ol>
-    </section>
-  </main>
+  <section class="grid" id="grid"></section>
+
+  <div class="section-title"><h3>sobre o projeto</h3></div>
+  <div class="form-card"><p>Projeto acadêmico: portal de receitas onde especialistas cadastram receitas. Permite futuramente operações CRUD.</p></div>
+
+</main>
+
+<footer class="footer center">Projeto para entrega acadêmica • Desenvolvido pela equipe</footer>
 </body>
 </html>

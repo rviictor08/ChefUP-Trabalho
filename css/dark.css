@@ -1,0 +1,5 @@
+:root{--bg:#0f0e0d;--panel:#161514;--muted:#a6907f;--accent:#ff8a5f;--accent-dark:#d46a44;--text:#f7efe8}
+html,body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif}
+.topbar{background:#120f0d}
+.recipe-card{background:var(--panel)}
+.input,textarea,select{background:#141210;color:var(--text);border:1px solid #2b2725}
